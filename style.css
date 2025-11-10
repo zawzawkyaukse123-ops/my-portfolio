@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Header */
 header {
   background: #0078d7;
   color: white;
@@ -17,8 +19,14 @@ nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
 section {
   padding: 2rem;
   max-width: 800px;
@@ -29,10 +37,10 @@ h2 {
   color: #0078d7;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
   background: #222;
   color: white;
 }
- 
