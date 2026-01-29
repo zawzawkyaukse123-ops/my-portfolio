@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beautiful Buttons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 18px;
+            max-width: 420px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 14px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+        }
+
+        .btn-success {
+            background: #2ecc71;
+        }
+
+        .btn-danger {
+            background: #e74c3c;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🚀 Buttons Demo</h1>
+        <p>
+            လှလှလေး button တွေကို HTML & CSS နဲ့<br>
+            ရိုးရိုးလေးပဲလုပ်ထားပါတယ် ✨
+        </p>
+
+        <div class="buttons">
+            <a href="#" class="btn btn-primary">Primary Button</a>
+            <a href="#" class="btn btn-success">Success Button</a>
+            <a href="#" class="btn btn-danger">Danger Button</a>
+            <a href="#" class="btn btn-outline">Outline Button</a>
+        </div>
+
+        <footer>
+            © 2026 My Beautiful UI
+        </footer>
+    </div>
+
+</body>
+</html>
