@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Valentine 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(135deg, #ff758c, #ff7eb3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        overflow: hidden;
+    }
+
+    .card {
+        background: white;
+        padding: 40px;
+        border-radius: 25px;
+        text-align: center;
+        max-width: 420px;
+        width: 90%;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+        animation: pop 1s ease;
+    }
+
+    @keyframes pop {
+        from { transform: scale(0.7); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    h1 {
+        font-family: 'Pacifico', cursive;
+        color: #ff4d6d;
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #555;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .heart {
+        font-size: 60px;
+        animation: beat 1s infinite;
+        margin: 20px 0;
+    }
+
+    @keyframes beat {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+    }
+
+    .buttons {
+        margin-top: 25px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    button {
+        border: none;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .yes {
+        background: #ff4d6d;
+        color: white;
+    }
+
+    .yes:hover {
+        background: #ff1e4d;
+        transform: translateY(-2px);
+    }
+
+    .love {
+        background: #ffd6e0;
+        color: #ff4d6d;
+    }
+
+    .love:hover {
+        background: #ffc2d1;
+        transform: translateY(-2px);
+    }
+
+    footer {
+        margin-top: 25px;
+        font-size: 13px;
+        color: #aaa;
+    }
+
+    /* floating hearts */
+    .float-heart {
+        position: absolute;
+        bottom: -20px;
+        color: rgba(255,255,255,0.7);
+        animation: floatUp 6s linear infinite;
+    }
+
+    @keyframes floatUp {
+        from {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateY(-120vh);
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- floating hearts -->
+<script>
+    setInterval(() => {
+        const heart = document.createElement("div");
+        heart.className = "float-heart";
+        heart.innerHTML = "💖";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = (20 + Math.random() * 20) + "px";
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 6000);
+    }, 400);
+</script>
+
+<div class="card">
+    <h1>Happy Valentine 💕</h1>
+
+    <div class="heart">❤️</div>
+
+    <p>
+        မင်းက ငါ့ဘဝထဲ ဝင်လာပြီး<br>
+        နေ့တိုင်းကို အလင်းရောင်နဲ့ ပြည့်စေခဲ့တဲ့သူပါ 🌸<br><br>
+        ဒီ Valentine’s Day မှာ  
+        **ငါ့ရဲ့ ချစ်ခြင်းတွေ အားလုံးကို မင်းဆီပေးချင်တယ်** 💖
+    </p>
+
+    <div class="buttons">
+        <button class="yes" onclick="alert('ငါ မင်းကို အရမ်းချစ်တယ် ❤️')">
+            I Love You 💘
+        </button>
+        <button class="love" onclick="alert('Forever with you 🥰')">
+            Forever 💍
+        </button>
+    </div>
+
+    <footer>
+        From your Valentine 💌
+    </footer>
+</div>
+
+</body>
+</html>
